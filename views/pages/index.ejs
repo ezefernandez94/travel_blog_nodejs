@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="/static/stylesheets/home.css">
+    </head>
+    <body>
+        <h1>Home</h1>
+        <a href="/about">About</a>
+        <a href="/exit">Log Out</a>
+        <p>The author of this home web page is <%=nombre%></p>
+
+        <ul>
+            <% for( let i = 1; i<=5; i++ ) { %>
+                <li> Elemento <%= i %> </li>
+            <% } %>
+        </ul>
+        <%- include('../partials/footer') %>
+    </body>
+</html>

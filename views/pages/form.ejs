@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="/static/stylesheets/home.css">
+    </head>
+    <body>
+        <form action="/process" method="post">
+            <p>
+                <label for="numero">Número</label>
+                <input type="text" name="numero">
+            </p>
+            <p>
+                <button type="submit">Calcular</button>
+            </p>
+        </form>
+        <%- include('../partials/footer') %>
+    </body>
+</html>

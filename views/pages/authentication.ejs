@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="/static/stylesheets/home.css">
+    </head>
+    <body>
+        <h6>
+            <%= error %>
+        </h6>
+        <form action="/authenticate" method="post">
+            <p>
+                <label for="user">Usuario: </label>
+                <input type="text" name="user">
+            </p>
+            <p>
+                <label for="user_password">Contraseña: </label>
+                <input type="password" name="user_password">
+            </p>
+            <p>
+                <button type="submit">Ingresar</button>
+            </p>
+        </form>
+        <%- include('../partials/footer') %>
+    </body>
+</html>
